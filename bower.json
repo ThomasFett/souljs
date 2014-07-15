@@ -1,0 +1,35 @@
+{
+  "name": "souljs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ThomasFett/souljs",
+  "authors": [
+    "Thomas Fett <souljs@thomasfett.de>"
+  ],
+  "description": "A sound library based on the web audio API, which provides real time sound effects and gives your website a soul.",
+  "main": "dist/soul.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "web",
+    "audio",
+    "API",
+    "sound",
+    "library",
+    "real-time",
+    "sound",
+    "effects"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "build",
+    "src",
+    "vendor",
+    "Makefile",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
