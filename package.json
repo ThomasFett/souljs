@@ -1,0 +1,33 @@
+{
+  "name": "souljs",
+  "version": "0.0.1",
+  "description": "tbd",
+  "main": "main.js",
+  "dependencies": {
+    "requirejs": "^2.1.14"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "uglify-js": "^2.5.0",
+    "watchify": "^3.4.0"
+  },
+  "scripts": {
+    "dev": "npm run watch & npm run serve",
+    "build": "npm run build-debug && npm run build-min",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify src/main.js -d --s soul -o dist/soul.js",
+    "serve": "http-server .",
+    "build-debug": "browserify src/main.js --s soul > dist/soul.js",
+    "build-min": "browserify src/main.js --s soul | uglifyjs -c > dist/soul.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasFett/souljs.git"
+  },
+  "author": "Thomas Fett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomasFett/souljs/issues"
+  },
+  "homepage": "https://github.com/ThomasFett/souljs"
+}

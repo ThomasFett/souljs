@@ -22,14 +22,9 @@
   ],
   "license": "MIT",
   "ignore": [
-    "build",
     "src",
-    "vendor",
-    "Makefile",
     "**/.*",
     "node_modules",
-    "bower_components",
-    "bower.json",
     "test",
     "tests"
   ]
